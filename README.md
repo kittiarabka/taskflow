@@ -1,6 +1,6 @@
 # TaskFlow Pure PHP
 
-Учебный проект Junior PHP Backend.
+todo лист
 
 Стек:
 - PHP 8+
