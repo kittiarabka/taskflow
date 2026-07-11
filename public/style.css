@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", Arial, sans-serif;
+    background:
+        linear-gradient(135deg, #141e30, #243b55);
+    color: #fff;
+}
+
+.container {
+    width: 600px;
+    max-width: 90%;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg,#8b5cf6,#ec4899);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex:1;
+    padding:15px 20px;
+    border-radius:15px;
+    border:none;
+    outline:none;
+    background:#ffffff15;
+    color:white;
+    font-size:16px;
+    backdrop-filter: blur(10px);
+}
+
+
+input::placeholder {
+    color:#aaa;
+}
+
+button {
+    border:none;
+    cursor:pointer;
+    padding:15px 25px;
+    border-radius:15px;
+    color:white;
+    font-weight:600;
+    background:
+    linear-gradient(135deg,#8b5cf6,#ec4899);
+    transition:.3s;
+}
+
+
+button:hover {
+    transform:translateY(-3px);
+    box-shadow:0 10px 30px #8b5cf655;
+}
+
+
+
+.card {
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    padding:25px;
+
+    border-radius:25px;
+
+    margin-bottom:20px;
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-5px);
+
+    border-color:#8b5cf6;
+
+}
+
+
+.card h3 {
+
+    font-size:22px;
+    margin-bottom:10px;
+
+}
+
+
+.card p {
+
+    color:#aaa;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card a {
+
+    display:inline-block;
+
+    padding:8px 15px;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+}
+
+
+.card a:hover {
+
+    background:#dc2626;
+
+}
+
+
+
+
+
+@media(max-width:600px){
+
+    form{
+        flex-direction:column;
+    }
+
+
+    button{
+        width:100%;
+    }
+
+}
